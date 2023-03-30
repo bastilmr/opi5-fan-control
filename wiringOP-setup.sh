@@ -50,7 +50,7 @@ sleep 1
 cd wiringOP/
 ./build clean
 sleep 1
-# ./build
+./build
 cd ..
 sleep 2
 
