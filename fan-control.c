@@ -5,7 +5,7 @@
 #include <softPwm.h>
 
 // Define
-#define FAN_PIN 3      // 'gpio readall' -> Column wPi
+#define FAN_PIN 3
 #define MIN_TEMP 30
 #define MAX_TEMP 70
 #define CPU_TEMP_FILE "/sys/class/thermal/thermal_zone0/temp"
