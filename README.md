@@ -1,4 +1,4 @@
-# Controlling a 5V PWM Fan (Orange Pi 5)
+# Orange Pi 5: Controlling a 5V PWM Fan
 
 This script written in C language reads the CPU temperature and adjusts the fan speed based on that information. Before the script can work, wiringOP needs to be downloaded and installed from Git to enable the use of GPIO pins. Additionally, the script needs to be compiled after it's downloaded.
 
@@ -32,17 +32,12 @@ git clone https://github.com/bastilmr/opi5-fan-control.git
 gcc -o fan-control fan-control.c -lwiringPi
 ```
 
-5. Set the executable permissions for the compiled script using the following command:
-```
-chmod +x fan-control
-```
-
-6. Add the script to your crontab to run at boot using the following command:
+5. Add the script to your crontab to run at boot using the following command:
 ```
 crontab -e
 ```
 
-7. Add the following line to your crontab to run the script at boot:
+6. Add the following line to your crontab to run the script at boot:
 ```
 @reboot /path/to/fan-control
 ```
