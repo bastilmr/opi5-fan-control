@@ -1,4 +1,4 @@
-# Orange Pi 5: Controlling a 5V PWM Fan
+# Orange Pi 5: PWM Fan Control
 
 This script written in C language reads the CPU temperature and adjusts the fan speed based on that information. Before the script can work, wiringOP needs to be downloaded and installed from Git to enable the use of GPIO pins. Additionally, the script needs to be compiled after it's downloaded.
 
