@@ -32,12 +32,17 @@ git clone https://github.com/bastilmr/opi5-fan-control.git
 gcc -o fan-control fan-control.c -lwiringPi
 ```
 
-5. Add the script to your crontab to run at boot using the following command:
+5. Make the script executable:
+```
+chmod +x fan-control
+```
+
+6. Add the script to your crontab to run at boot using the following command:
 ```
 crontab -e
 ```
 
-6. Add the following line to your crontab to run the script at boot:
+7. Add the following line to your crontab to run the script at boot:
 ```
 @reboot /path/to/fan-control
 ```
