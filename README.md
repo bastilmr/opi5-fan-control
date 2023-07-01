@@ -31,6 +31,10 @@ git clone https://github.com/bastilmr/opi5-fan-control.git
 ```
 gcc -o fan-control fan-control.c -lwiringPi
 ```
+Or for binary fan control (no PWM):
+```
+gcc -o fan-control binary-fan-control.c -lwiringPi
+```
 
 5. Make the script executable:
 ```
@@ -64,4 +68,4 @@ In this example, the fan was connected to the 5V, Ground, and GPIO4_A3 (UART0_TX
 
 ## Note
 
-This script has been successfully tested on an Orange Pi 5. However, it should also work on other Orange Pi's.
+This script has been successfully tested on an Orange Pi 5 and Orange Pi 5b. However, it should also work on other Orange Pi's.
